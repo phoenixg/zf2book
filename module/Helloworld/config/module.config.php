@@ -49,19 +49,19 @@ return array(
         )
     ),
     'controllers' => array(
-        /* Using the direct instantiation approach
+        /* Using the direct instantiation approach*/
         'invokables' => array(
             'Helloworld\Controller\Index'
                 => 'Helloworld\Controller\IndexController'
-        )
-        */
+        ),
+        
         /* Using the factory instantiation approach
         'factories' => array(
             'Helloworld\Controller\Index'
                 => 'Helloworld\Controller\IndexControllerFactory'
         )
         */
-        /* Using a callback factory instantiation approach */
+        /* Using a callback factory instantiation approach 
         'factories' => array(
             'Helloworld\Controller\Index' => function($serviceLocator) {
                 $ctr = new Helloworld\Controller\IndexController();
@@ -75,6 +75,7 @@ return array(
             },
             'Helloworld\Controller\Auth' => 'Helloworld\Controller\AuthControllerFactory'
         )
+        */
     ),
     'service_manager' => array(
         'invokables' => array(
